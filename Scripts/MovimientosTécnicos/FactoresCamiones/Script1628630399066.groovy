@@ -17,9 +17,38 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-WebUI.openBrowser('')
+CustomKeywords.'com.metodos.ImplementacionGUI.LoginPuebla'()
 
-WebUI.navigateToUrl('www.google.com.mx')
+WebUI.click(findTestObject('Repo_MovimientosTécnicos/Page_Sistema de Control Vehicular/a_Movimientos Tcnicos'))
 
-WebUI.navigateToUrl('www.youtube.com')
+WebUI.click(findTestObject('Repo_MovimientosTécnicos/Page_Sistema de Control Vehicular/a_Factores para calculo ISTUV'))
+
+WebUI.click(findTestObject('Repo_MovimientosTécnicos/Page_Sistema de Control Vehicular/a_Factores de Camiones'))
+
+WebUI.delay(2)
+
+WebUI.setText(findTestObject('Repo_MovimientosTécnicos/Page_Sistema de Control Vehicular/Page_Sistema de Control Vehicular/input_Ao fiscal_iIdAnioFiscal'), 
+    '2020')
+
+WebUI.setText(findTestObject('Repo_MovimientosTécnicos/Page_Sistema de Control Vehicular/Page_Sistema de Control Vehicular/input_Modelo_iIdModelo'), 
+    '2020')
+
+WebUI.click(findTestObject('Repo_MovimientosTécnicos/Page_Sistema de Control Vehicular/Page_Sistema de Control Vehicular/button_Buscar'))
+
+WebUI.delay(3)
+
+WebUI.click(findTestObject('Repo_MovimientosTécnicos/Page_Sistema de Control Vehicular/Page_Sistema de Control Vehicular/button_Limpiar'))
+
+WebUI.click(findTestObject('Repo_MovimientosTécnicos/Page_Sistema de Control Vehicular/Page_Sistema de Control Vehicular/button_Agregar'))
+
+WebUI.setText(findTestObject('Repo_MovimientosTécnicos/Page_Sistema de Control Vehicular/Page_Sistema de Control Vehicular/input_Ao fiscal_iIdAnioFiscal'), 
+    '2020')
+
+WebUI.setText(findTestObject('Repo_MovimientosTécnicos/Page_Sistema de Control Vehicular/Page_Sistema de Control Vehicular/input_Modelo_iIdModelo'), 
+    '2020')
+
+WebUI.click(findTestObject('Repo_MovimientosTécnicos/Page_Sistema de Control Vehicular/Page_Sistema de Control Vehicular/button_Buscar'))
+
+WebUI.verifyElementInViewport(findTestObject('Repo_MovimientosTécnicos/Page_Sistema de Control Vehicular/Page_Sistema de Control Vehicular/div_Ao Fiscal'), 
+    0)
 
