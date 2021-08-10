@@ -19,15 +19,7 @@ import org.openqa.selenium.Keys as Keys
 
 WebUI.openBrowser('')
 
-WebUI.navigateToUrl('https://scvpueblatest.intecproof.com/')
+WebUI.navigateToUrl('www.google.com.mx')
 
-WebUI.click(findTestObject('Repo_Login/Page_Sistema de Control Vehicular/a_Ingresar'))
-
-WebUI.setText(findTestObject('Repo_Login/Page_Sistema de Control Vehicular/input_Ingresar_inputUsuario'), 'PRUEBASCV7')
-
-WebUI.setText(findTestObject('Repo_Login/Page_Sistema de Control Vehicular/input_Ingresar_inputPass'), 'PRUEBASCV123*')
-
-WebUI.click(findTestObject('Repo_Login/Page_Sistema de Control Vehicular/button_Entrar'))
-
-WebUI.verifyElementInViewport(findTestObject('Repo_Login/Page_Sistema de Control Vehicular/a_Sistema'), 0)
+WebUI.navigateToUrl('www.youtube.com')
 

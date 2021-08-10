@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>New Test Case</name>
+   <name>FactoresCamiones</name>
    <tag></tag>
    <comment></comment>
-   <testCaseGuid>e6e494b3-d4ad-4030-8dbe-0f987003273b</testCaseGuid>
+   <testCaseGuid>ad602954-f16f-46e9-9149-2e1bb71bcbaf</testCaseGuid>
 </TestCaseEntity>
