@@ -19,6 +19,8 @@ import org.openqa.selenium.Keys as Keys
 
 CustomKeywords.'com.metodos.ImplementacionGUI.LoginPuebla'()
 
+WebUI.maximizeWindow()
+
 WebUI.click(findTestObject('Repo_CertificaciónPagos/Page_Sistema de Control Vehicular/a_Certificacin de Pagos'))
 
 WebUI.click(findTestObject('Repo_CertificaciónPagos/Page_Sistema de Control Vehicular/a_Certificacion de Pagos'))

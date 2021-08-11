@@ -19,6 +19,8 @@ import org.openqa.selenium.Keys as Keys
 
 CustomKeywords.'com.metodos.ImplementacionGUI.LoginPuebla'()
 
+WebUI.maximizeWindow()
+
 WebUI.click(findTestObject('Repo_MovimientosTécnicos/Page_Sistema de Control Vehicular/a_Movimientos Tcnicos'))
 
 WebUI.click(findTestObject('Repo_MovimientosTécnicos/Page_Sistema de Control Vehicular/a_Factores para calculo ISTUV'))

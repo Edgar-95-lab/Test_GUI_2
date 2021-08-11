@@ -19,6 +19,8 @@ import org.openqa.selenium.Keys as Keys
 
 CustomKeywords.'com.metodos.ImplementacionGUI.LoginPuebla'()
 
+WebUI.maximizeWindow()
+
 WebUI.click(findTestObject('Repo_MovimientosTécnicos/Page_Sistema de Control Vehicular/a_Movimientos Tcnicos'))
 
 WebUI.click(findTestObject('Repo_MovimientosTécnicos/Page_Sistema de Control Vehicular/a_Etiquetamientos'))
@@ -31,4 +33,9 @@ WebUI.setText(findTestObject('Repo_MovimientosTécnicos/Page_Sistema de Control 
 WebUI.click(findTestObject('Repo_MovimientosTécnicos/Page_Sistema de Control Vehicular/button_Consultar'))
 
 WebUI.delay(5)
+
+println('El campo: Número de Operación, se encuentra vacío...')
+
+WebUI.verifyElementNotInViewport(findTestObject('Repo_MovimientosTécnicos/Page_Sistema de Control Vehicular/button_Limpiar'), 
+    0)
 

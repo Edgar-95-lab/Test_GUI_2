@@ -1,5 +1,5 @@
 {
-  "keywordFileContentHash": "E8634CF559AFE9C6B73F1540E53B142B",
+  "keywordFileContentHash": "82C453C8AF762BEE42ABE0F565D271BD",
   "keywordClasses": [
     {
       "name": "com.metodos.ImplementacionGUI",
@@ -8,6 +8,25 @@
           "name": "refreshBrowser",
           "parameters": [],
           "javadoc": "/**\r\n\t * Refresh browser\r\n\t */"
+        },
+        {
+          "name": "Element_Text",
+          "parameters": [
+            {
+              "name": "to",
+              "initialExpression": "",
+              "type": {
+                "fullClassName": "com.kms.katalon.core.testobject.TestObject",
+                "unresolvedClassName": "TestObject",
+                "isArray": false,
+                "isGnericsPlaceHolder": false,
+                "hasImmutableClassName": false,
+                "genericsTypes": [],
+                "errorOnParsing": false
+              }
+            }
+          ],
+          "javadoc": "/**\r\n\t * Verifica que el texto en el elemento no se encuentre vacío \r\n\t * @param to Katalon test object\r\n\t */"
         },
         {
           "name": "clickElement",

@@ -68,25 +68,31 @@ class ImplementacionGUI {
 		webDriver.navigate().refresh()
 		KeywordUtil.markPassed("Refresh successfully")
 	}
-	
+
 	/**
 	 * Verifica que el texto en el elemento no se encuentre vacío 
 	 * @param to Katalon test object
 	 */
 	@Keyword
 	def Element_Text(TestObject to) {
-		
+		try {
 			WebElement element = WebUiBuiltInKeywords.findWebElement(to);
-			element.click()
 			
-			if(to.toString().equals('')) {
-				KeywordUtil.markFailed('El campo: ' + ' Se encuentra vacío')
-				
+			if(to.toString().trim().equals('')) {
+				KeywordUtil.markFailed('El campo: ' + to + ' Se encuentra vacío')
 			}else {
+				KeywordUtil.markPassed('Contenido del objeto: ' + element.toString())
 				KeywordUtil.markPassed("Elemento verificado con éxito")
-				
 			}
 			
+		} catch (WebElementNotFoundException e) {
+			KeywordUtil.markFailed("Element not found")
+		} catch (Exception e) {
+			KeywordUtil.markFailed("Fail to click on element")
+		}
+		
+
+		
 	}
 
 	/**
@@ -98,6 +104,7 @@ class ImplementacionGUI {
 		try {
 			WebElement element = WebUiBuiltInKeywords.findWebElement(to);
 			KeywordUtil.logInfo("Clicking element")
+			
 			element.click()
 			KeywordUtil.markPassed("Element has been clicked")
 		} catch (WebElementNotFoundException e) {
