@@ -29,6 +29,8 @@ WebUI.click(findTestObject('Repo_Cobros/Page_Sistema de Control Vehicular/button
 
 WebUI.delay(3)
 
+println('Muestra el mensaje: No se encontraron resultados, sin embargo se muestra información por detrás...')
+
 WebUI.verifyElementNotInViewport(findTestObject('Repo_Cobros/Page_Sistema de Control Vehicular/div_Datos del Vehculo'), 
     0)
 
@@ -39,6 +41,8 @@ WebUI.setText(findTestObject('Repo_Cobros/Page_Sistema de Control Vehicular/inpu
 WebUI.click(findTestObject('Repo_Cobros/Page_Sistema de Control Vehicular/button_Buscar'))
 
 WebUI.delay(3)
+
+println('Muestra el mensaje: No se encontraron resultados, sin embargo se muestra información por detrás...')
 
 WebUI.verifyElementNotInViewport(findTestObject('Repo_Cobros/Page_Sistema de Control Vehicular/div_Datos del Vehculo'), 
     0)
@@ -59,6 +63,8 @@ WebUI.setText(findTestObject('Repo_Cobros/Page_Sistema de Control Vehicular/inpu
 WebUI.click(findTestObject('Repo_Cobros/Page_Sistema de Control Vehicular/button_Buscar'))
 
 WebUI.delay(3)
+
+println('Muestra el mensaje: No se encontraron resultados, sin embargo se muestra información por detrás...')
 
 WebUI.verifyElementNotInViewport(findTestObject('Repo_Cobros/Page_Sistema de Control Vehicular/Page_Sistema de Control Vehicular/div_Datos de infraccionesSeleccionar Todo'), 
     0)
