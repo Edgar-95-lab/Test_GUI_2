@@ -49,6 +49,47 @@ WebUI.setText(findTestObject('Repo_MovimientosTécnicos/Page_Sistema de Control 
 
 WebUI.click(findTestObject('Repo_MovimientosTécnicos/Page_Sistema de Control Vehicular/Page_Sistema de Control Vehicular/button_Buscar'))
 
+println('El botón agregar no realiza ningún cambio en la página y por consecuencia crea una interrupción en el funcionamiento (NO RESPONDE)')
+
+WebUI.verifyElementInViewport(findTestObject('Repo_MovimientosTécnicos/Page_Sistema de Control Vehicular/Page_Sistema de Control Vehicular/div_Ao Fiscal'), 
+    0)
+
+CustomKeywords.'com.metodos.ImplementacionGUI.refreshBrowser'()
+
+WebUI.delay(5)
+
+WebUI.click(findTestObject('Repo_MovimientosTécnicos/Page_Sistema de Control Vehicular/a_Movimientos Tcnicos'))
+
+WebUI.click(findTestObject('Repo_MovimientosTécnicos/Page_Sistema de Control Vehicular/a_Factores para calculo ISTUV'))
+
+WebUI.click(findTestObject('Repo_MovimientosTécnicos/Page_Sistema de Control Vehicular/a_Factores de Camiones'))
+
+WebUI.delay(2)
+
+WebUI.setText(findTestObject('Repo_MovimientosTécnicos/Page_Sistema de Control Vehicular/Page_Sistema de Control Vehicular/input_Ao fiscal_iIdAnioFiscal'), 
+    '2020')
+
+WebUI.setText(findTestObject('Repo_MovimientosTécnicos/Page_Sistema de Control Vehicular/Page_Sistema de Control Vehicular/input_Modelo_iIdModelo'), 
+    '2020')
+
+WebUI.click(findTestObject('Repo_MovimientosTécnicos/Page_Sistema de Control Vehicular/Page_Sistema de Control Vehicular/button_Buscar'))
+
+WebUI.delay(3)
+
+WebUI.click(findTestObject('Repo_MovimientosTécnicos/Page_Sistema de Control Vehicular/Page_Sistema de Control Vehicular/button_Limpiar'))
+
+WebUI.click(findTestObject('Repo_MovimientosTécnicos/Page_Sistema de Control Vehicular/Page_Sistema de Control Vehicular/button_Agregar'))
+
+WebUI.setText(findTestObject('Repo_MovimientosTécnicos/Page_Sistema de Control Vehicular/Page_Sistema de Control Vehicular/input_Ao fiscal_iIdAnioFiscal'), 
+    '2020')
+
+WebUI.setText(findTestObject('Repo_MovimientosTécnicos/Page_Sistema de Control Vehicular/Page_Sistema de Control Vehicular/input_Modelo_iIdModelo'), 
+    '2020')
+
+WebUI.click(findTestObject('Repo_MovimientosTécnicos/Page_Sistema de Control Vehicular/Page_Sistema de Control Vehicular/button_Buscar'))
+
+println('El botón agregar no realiza ningún cambio en la página y por consecuencia crea una interrupción en el funcionamiento (NO RESPONDE)')
+
 WebUI.verifyElementInViewport(findTestObject('Repo_MovimientosTécnicos/Page_Sistema de Control Vehicular/Page_Sistema de Control Vehicular/div_Ao Fiscal'), 
     0)
 
