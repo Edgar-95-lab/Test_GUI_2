@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Login_Mul</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>3a344c82-ac5e-4b0b-9878-a586881627de</testCaseGuid>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>3fdf957a-cbc4-493a-aa8b-23b37c0807dd</id>
+      <masked>false</masked>
+      <name>LINK</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>f64aabf5-b8f1-435f-b0ac-69169bfa1d27</id>
+      <masked>false</masked>
+      <name>USUARIO</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>1eba7f2a-8c95-4a9b-aceb-34ea534dea51</id>
+      <masked>false</masked>
+      <name>PASSWORD</name>
+   </variable>
+</TestCaseEntity>

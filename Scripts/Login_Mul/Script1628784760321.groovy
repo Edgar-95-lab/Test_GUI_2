@@ -17,9 +17,23 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-CustomKeywords.'com.metodos.ImplementacionGUI.LoginPuebla'()
+WebUI.openBrowser('')
 
 WebUI.waitForPageLoad(3)
+
+WebUI.navigateToUrl(LINK)
+
+WebUI.maximizeWindow(FailureHandling.CONTINUE_ON_FAILURE)
+
+WebUI.click(findTestObject('Repo_Login/Page_Sistema de Control Vehicular/a_Ingresar'))
+
+WebUI.setText(findTestObject('Repo_Login/Page_Sistema de Control Vehicular/input_Ingresar_inputUsuario'), USUARIO)
+
+WebUI.setText(findTestObject('Repo_Login/Page_Sistema de Control Vehicular/input_Ingresar_inputPass'), PASSWORD)
+
+WebUI.click(findTestObject('Repo_Login/Page_Sistema de Control Vehicular/button_Entrar'))
+
+WebUI.delay(5)
 
 WebUI.click(findTestObject('Repo_MovimientosTécnicos/Page_Sistema de Control Vehicular/a_Movimientos Tcnicos'))
 
@@ -29,11 +43,11 @@ WebUI.click(findTestObject('Repo_MovimientosTécnicos/Page_Sistema de Control Ve
 
 WebUI.delay(2)
 
-WebUI.setText(findTestObject('Repo_MovimientosTécnicos/Page_Sistema de Control Vehicular/Page_Sistema de Control Vehicular/input_Ao fiscal_iIdAnioFiscal'), 
-    '2020')
+WebUI.setText(findTestObject('Repo_MovimientosTécnicos/Page_Sistema de Control Vehicular/Page_Sistema de Control Vehicular/input_Ao fiscal_iIdAnioFiscal'),
+	'2020')
 
-WebUI.setText(findTestObject('Repo_MovimientosTécnicos/Page_Sistema de Control Vehicular/Page_Sistema de Control Vehicular/input_Modelo_iIdModelo'), 
-    '2020')
+WebUI.setText(findTestObject('Repo_MovimientosTécnicos/Page_Sistema de Control Vehicular/Page_Sistema de Control Vehicular/input_Modelo_iIdModelo'),
+	'2020')
 
 WebUI.click(findTestObject('Repo_MovimientosTécnicos/Page_Sistema de Control Vehicular/Page_Sistema de Control Vehicular/button_Buscar'))
 
@@ -43,20 +57,16 @@ WebUI.click(findTestObject('Repo_MovimientosTécnicos/Page_Sistema de Control Ve
 
 WebUI.click(findTestObject('Repo_MovimientosTécnicos/Page_Sistema de Control Vehicular/Page_Sistema de Control Vehicular/button_Agregar'))
 
-WebUI.setText(findTestObject('Repo_MovimientosTécnicos/Page_Sistema de Control Vehicular/Page_Sistema de Control Vehicular/input_Ao fiscal_iIdAnioFiscal'), 
-    '2020')
+WebUI.setText(findTestObject('Repo_MovimientosTécnicos/Page_Sistema de Control Vehicular/Page_Sistema de Control Vehicular/input_Ao fiscal_iIdAnioFiscal'),
+	'2020')
 
-WebUI.setText(findTestObject('Repo_MovimientosTécnicos/Page_Sistema de Control Vehicular/Page_Sistema de Control Vehicular/input_Modelo_iIdModelo'), 
-    '2020')
+WebUI.setText(findTestObject('Repo_MovimientosTécnicos/Page_Sistema de Control Vehicular/Page_Sistema de Control Vehicular/input_Modelo_iIdModelo'),
+	'2020')
 
 WebUI.click(findTestObject('Repo_MovimientosTécnicos/Page_Sistema de Control Vehicular/Page_Sistema de Control Vehicular/button_Buscar'))
 
 println('El botón agregar no realiza ningún cambio en la página y por consecuencia crea una interrupción en el funcionamiento (NO RESPONDE)')
 
-WebUI.verifyElementInViewport(findTestObject('Repo_MovimientosTécnicos/Page_Sistema de Control Vehicular/Page_Sistema de Control Vehicular/div_Ao Fiscal'), 
-    0)
-
-CustomKeywords.'com.metodos.ImplementacionGUI.refreshBrowser'()
-
-WebUI.delay(5)
+WebUI.verifyElementInViewport(findTestObject('Repo_MovimientosTécnicos/Page_Sistema de Control Vehicular/Page_Sistema de Control Vehicular/div_Ao Fiscal'),
+	0)
 

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestSuiteEntity>
+   <description></description>
+   <name>LoginMul</name>
+   <tag></tag>
+   <isRerun>false</isRerun>
+   <mailRecipient></mailRecipient>
+   <numberOfRerun>0</numberOfRerun>
+   <pageLoadTimeout>5</pageLoadTimeout>
+   <pageLoadTimeoutDefault>true</pageLoadTimeoutDefault>
+   <rerunFailedTestCasesOnly>false</rerunFailedTestCasesOnly>
+   <rerunImmediately>false</rerunImmediately>
+   <testSuiteGuid>7c00963a-7a56-4818-b15a-bf9129f2fa3f</testSuiteGuid>
+   <testCaseLink>
+      <guid>c277e8f0-0388-467c-bed7-ccdbc1871105</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Login_Mul</testCaseId>
+      <testDataLink>
+         <combinationType>ONE</combinationType>
+         <id>8094198e-2d67-4576-8fbe-a93c27e1c511</id>
+         <iterationEntity>
+            <iterationType>ALL</iterationType>
+            <value></value>
+         </iterationEntity>
+         <testDataId>Data Files/ExcelVData</testDataId>
+      </testDataLink>
+      <variableLink>
+         <testDataLinkId>8094198e-2d67-4576-8fbe-a93c27e1c511</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>LINK</value>
+         <variableId>3fdf957a-cbc4-493a-aa8b-23b37c0807dd</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId>8094198e-2d67-4576-8fbe-a93c27e1c511</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>USUARIO</value>
+         <variableId>f64aabf5-b8f1-435f-b0ac-69169bfa1d27</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId>8094198e-2d67-4576-8fbe-a93c27e1c511</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>PASSWORD</value>
+         <variableId>1eba7f2a-8c95-4a9b-aceb-34ea534dea51</variableId>
+      </variableLink>
+   </testCaseLink>
+</TestSuiteEntity>

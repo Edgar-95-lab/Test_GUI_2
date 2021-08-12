@@ -36,6 +36,10 @@ WebUI.delay(5)
 
 println('El campo: Número de Operación, se encuentra vacío...')
 
-WebUI.verifyElementNotInViewport(findTestObject('Repo_MovimientosTécnicos/Page_Sistema de Control Vehicular/button_Limpiar'), 
+WebUI.verifyElementInViewport(findTestObject('Repo_MovimientosTécnicos/Page_Sistema de Control Vehicular/button_Consultar'), 
     0)
+
+CustomKeywords.'com.metodos.ImplementacionGUI.Element_Text'(findTestObject('Repo_MovimientosTécnicos/Page_Sistema de Control Vehicular/td_no_oper'))
+
+
 

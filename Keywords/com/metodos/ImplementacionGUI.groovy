@@ -78,18 +78,39 @@ class ImplementacionGUI {
 		try {
 			WebElement element = WebUiBuiltInKeywords.findWebElement(to);
 
-			if(to.toString().trim().equals('')) {
-				KeywordUtil.markFailed('El campo: ' + to + ' Se encuentra vacío')
+			if(WebUI.getText(to).trim().equals('')) {
+				
+				KeywordUtil.markFailed('El campo: ' + to + ' se encuentra vacío')
 			}else {
-				KeywordUtil.markPassed('Contenido del objeto: ' + element.toString())
-				KeywordUtil.markPassed("Elemento verificado con éxito")
+				KeywordUtil.markPassed("Elemento verificado con éxito, Valor: " + WebUI.getText(to))
 			}
 		} catch (WebElementNotFoundException e) {
-			KeywordUtil.markFailed("Element not found")
+			KeywordUtil.markFailed("Elemento no encontrado...")
 		} catch (Exception e) {
-			KeywordUtil.markFailed("Fail to click on element")
+			KeywordUtil.markFailed("Error al evaluar el elemento")
 		}
 	}
+	
+	/**
+	 * Método que cumple con la función de contains()
+	 */
+	public void ElementContains(TestObject to, String texto) {
+		try {
+			WebElement element = WebUiBuiltInKeywords.findWebElement(to);
+
+			if(WebUI.getText(to).contains(texto)) {
+				
+				KeywordUtil.markPassed('El elemento contiene el texto deseado')
+			}else {
+				KeywordUtil.markFailed("El elemento no contiene el valor esperado, Valor: " + WebUI.getText(to))
+			}
+		} catch (WebElementNotFoundException e) {
+			KeywordUtil.markFailed("Elemento no encontrado...")
+		} catch (Exception e) {
+			KeywordUtil.markFailed("Error al evaluar el elemento")
+		}
+	}
+	
 
 	/**
 	 * Click element
@@ -131,7 +152,7 @@ class ImplementacionGUI {
 		WebUI.openBrowser('')
 
 		WebUI.navigateToUrl('https://localhost:44379/')
-		
+
 		WebUI.maximizeWindow()
 
 		WebUI.click(findTestObject('Repo_Login/Page_Sistema de Control Vehicular/a_Ingresar'))
@@ -153,7 +174,7 @@ class ImplementacionGUI {
 		WebUI.openBrowser('')
 
 		WebUI.navigateToUrl('https://scvpueblatest.intecproof.com/')
-		
+
 		WebUI.maximizeWindow()
 
 		WebUI.click(findTestObject('Repo_Login/Page_Sistema de Control Vehicular/a_Ingresar'))
