@@ -19,7 +19,7 @@ import org.openqa.selenium.Keys as Keys
 
 CustomKeywords.'com.metodos.ImplementacionGUI.LoginPuebla'()
 
-WebUI.maximizeWindow()
+WebUI.waitForPageLoad(3)
 
 WebUI.click(findTestObject('Repo_Cobros/Page_Sistema de Control Vehicular/a_Cobros'))
 

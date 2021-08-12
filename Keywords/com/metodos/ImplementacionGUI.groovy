@@ -131,6 +131,8 @@ class ImplementacionGUI {
 		WebUI.openBrowser('')
 
 		WebUI.navigateToUrl('https://localhost:44379/')
+		
+		WebUI.maximizeWindow()
 
 		WebUI.click(findTestObject('Repo_Login/Page_Sistema de Control Vehicular/a_Ingresar'))
 
@@ -151,6 +153,8 @@ class ImplementacionGUI {
 		WebUI.openBrowser('')
 
 		WebUI.navigateToUrl('https://scvpueblatest.intecproof.com/')
+		
+		WebUI.maximizeWindow()
 
 		WebUI.click(findTestObject('Repo_Login/Page_Sistema de Control Vehicular/a_Ingresar'))
 
