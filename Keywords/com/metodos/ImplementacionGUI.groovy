@@ -79,7 +79,7 @@ class ImplementacionGUI {
 			WebElement element = WebUiBuiltInKeywords.findWebElement(to);
 
 			if(WebUI.getText(to).trim().equals('')) {
-				
+
 				KeywordUtil.markFailed('El campo: ' + to + ' se encuentra vacío')
 			}else {
 				KeywordUtil.markPassed("Elemento verificado con éxito, Valor: " + WebUI.getText(to))
@@ -90,7 +90,7 @@ class ImplementacionGUI {
 			KeywordUtil.markFailed("Error al evaluar el elemento")
 		}
 	}
-	
+
 	/**
 	 * Método que cumple con la función de contains()
 	 */
@@ -99,7 +99,7 @@ class ImplementacionGUI {
 			WebElement element = WebUiBuiltInKeywords.findWebElement(to);
 
 			if(WebUI.getText(to).contains(texto)) {
-				
+
 				KeywordUtil.markPassed('El elemento contiene el texto deseado')
 			}else {
 				KeywordUtil.markFailed("El elemento no contiene el valor esperado, Valor: " + WebUI.getText(to))
@@ -110,7 +110,7 @@ class ImplementacionGUI {
 			KeywordUtil.markFailed("Error al evaluar el elemento")
 		}
 	}
-	
+
 
 	/**
 	 * Click element
